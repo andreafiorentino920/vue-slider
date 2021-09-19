@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="root">
+        <div class="container">
+            <div class="carousel d-flex">
+                <div class="previous d-flex align-items-center">
+                    <i class="fas fa-chevron-left" @click="prevImage()"></i>
+                </div>
+                <div class="image">
+                    <img :src="images[imagesIndex]">
+                    <div class="pulsanti btn btn-dark d-flex justify-content-center">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle active"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div>
+                <div class="next d-flex align-items-center ">
+                    <i class="fas fa-chevron-right" @click="nextImage()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </body>
 </html>
