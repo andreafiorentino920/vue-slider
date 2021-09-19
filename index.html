@@ -19,9 +19,7 @@
                 <div class="image">
                     <img :src="images[imagesIndex]">
                     <div class="pulsanti btn btn-dark d-flex justify-content-center">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle active"></i>
-                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle" v-for="(image, index) in images" :class="imagesIndex == index ? 'active': ''"></i>
                     </div>
                 </div>
                 <div class="next d-flex align-items-center ">

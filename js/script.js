@@ -7,7 +7,7 @@ var app = new Vue(
         data:{
             images: [
                 "https://www.lavoripubblici.it/img/portofino.jpg",
-                "https://www.casadivita.despar.it/app/uploads/2016/02/liguria.jpg",
+                "https://www.miglioripuzzle.it/wp-content/uploads/2020/04/Puzzle-Paesaggi-Liguria.jpeg",
                 "http://www.enricopieragostini.it/images/gallery/6/a50bfa.jpg"
             ],
             imagesIndex:0
