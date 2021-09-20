@@ -15,14 +15,14 @@ var app = new Vue(
         methods:{
            nextImage:function(){
             this.imagesIndex++;
-            if(this.imagesIndex >= this.images.lenght){
+            if(this.imagesIndex >= this.images.length){
                 this.imagesIndex = 0;
             }
            },
            prevImage:function(){
             this.imagesIndex--;
             if(this.imagesIndex == -1){
-                this.imagesIndex = this.images.lenght - 1;
+                this.imagesIndex = this.images.length - 1;
             }
            }
         }
